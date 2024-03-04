@@ -27,25 +27,28 @@ export const CardWrapper = ({
 }: CardWrapperProps) => {
     return (
         <Card className="w-[400px] shadow-md">
+
             <CardHeader>
                 <Header label={headerLabel} />
             </CardHeader>
-            <CardContent>
 
+            <CardContent>
                 {children}
             </CardContent>
+
             {showSocial && (
                 <CardFooter>
                     <Social />
                 </CardFooter>
             )}
+
             <CardFooter>
                 <BackButton
-            label={backButtonLabel}
-            href={backButtonHref}>
+                    label={backButtonLabel}
+                    href={backButtonHref}>
                 </BackButton>
-
             </CardFooter>
+            
         </Card>
     )
 };
