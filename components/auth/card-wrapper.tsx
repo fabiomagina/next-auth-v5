@@ -23,7 +23,7 @@ export const CardWrapper = ({
     headerLabel,
     backButtonLabel,
     backButtonHref,
-    showSocial = true
+    showSocial = false
 }: CardWrapperProps) => {
     return (
         <Card className="w-[400px] shadow-md">
@@ -48,7 +48,7 @@ export const CardWrapper = ({
                     href={backButtonHref}>
                 </BackButton>
             </CardFooter>
-            
+
         </Card>
     )
 };
